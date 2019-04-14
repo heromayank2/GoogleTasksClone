@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "328577349182",
+    "firebase_url": "https://tasks-clone.firebaseio.com",
+    "project_id": "tasks-clone",
+    "storage_bucket": "tasks-clone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328577349182:android:14222d5510eb09b1",
+        "android_client_info": {
+          "package_name": "com.mayankgoyal.clonegoogletasks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328577349182-500e1a3t5mhhsvepmgf50ndqeee756nu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mayankgoyal.clonegoogletasks",
+            "certificate_hash": "4ea958390b0a1268930607097d83ac2f1a7f2325"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvlw4MZDxi1puZtSlth6ohwmf7jpVqHuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328577349182-j0r739uajlbgbg393pjmkoqk9vl9v5u0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

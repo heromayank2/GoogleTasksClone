@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/baap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_arrow_drop_up_black_24dp" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                app:srcCompat="@drawable/my" />
+
+            <ImageView
+                android:id="@+id/circle_crop"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/yy" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/name21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/frame"
+            android:text="hello"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name21"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/frame"
+            android:text="hero@gmail.com"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/TaskName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/frame"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundcorner3"
+            android:padding="10dp"
+            android:text="My Tasks"
+            android:textColor="#4285F4" />
+
+        <!--<Button-->
+            <!--android:id="@+id/newList"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_below="@+id/TaskName"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="#ffffff"-->
+            <!--android:drawableLeft="@drawable/ic_add_black_24dp"-->
+            <!--android:elevation="0dp"-->
+            <!--android:padding="10dp"-->
+            <!--android:stateListAnimator="@null"-->
+            <!--android:text="   Create new list"-->
+            <!--android:textAlignment="viewStart"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textSize="13dp" />-->
+
+        <Button
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/TaskName"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/ic_bubble_chart_black_24dp"
+            android:padding="10dp"
+            android:stateListAnimator="@null"
+            android:text="   Feedback"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/opensource"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/feedback"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:stateListAnimator="@null"
+            android:text="Open-source licenses"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/signOut"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/opensource"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:stateListAnimator="@null"
+            android:text="Sign out"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:id="@+id/endButton"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/signOut"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:text="Privacy Policy"
+                android:stateListAnimator="@null"
+                android:textAlignment="textEnd"
+                android:textAllCaps="false"
+                android:textSize="10dp"
+                android:clickable="true"/>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.05"
+                app:srcCompat="@drawable/ic_brightness_1_black_24dp" />
+
+            <Button
+                android:id="@+id/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:stateListAnimator="@null"
+                android:text="Terms of Service"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".TaskActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp"
+        android:text="My Tasks"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="20dp"
+        android:stateListAnimator="@null"
+        android:id="@+id/taskRecyclerView"
+        android:layout_below="@+id/textView3"
+        android:layout_above="@+id/usemeh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/firstImage"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="52dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/tasks" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/usemeh"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/menu1"
+            style="@style/Widget.MaterialComponents.BottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:onClick="showBottomSheetDialog"
+            app:navigationIcon="@drawable/ic_menu_black_24dp">
+
+            <Button
+                android:textAlignment="textEnd"
+                android:id="@+id/btn_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="220dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_more_vert_black_24dp"
+                android:onClick="showBottomSheetDialog3"
+                android:padding="10dp"
+                android:gravity="end"
+                android:stateListAnimator="@null" />
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="90dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/roundcorner2"
+            android:drawableLeft="@drawable/ic_add_white_24dp"
+            android:onClick="showBottomSheetDialog2"
+            android:paddingHorizontal="20dp"
+            android:text="Add a new task"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_anchor="@id/menu1" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+</RelativeLayout>
